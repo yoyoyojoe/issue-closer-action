@@ -15,6 +15,9 @@ inputs:
     description: Regular expression pattern which the pull request body must match otherwise it's closed
   repo-token:
     description: GitHub token
+  close-issue-label:
+    description: Label to apply on closed issues
+    required: false
 runs:
   using: node12
   main: dist/index.js
